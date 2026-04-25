@@ -1,6 +1,6 @@
 {
   "name": "pi-exit",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Minimal pi package that adds a /exit command.",
   "type": "module",
   "license": "MIT",
