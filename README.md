@@ -7,7 +7,7 @@ Minimal [pi](https://github.com/badlogic/pi-mono) package that adds a `/exit` co
 From GitHub:
 
 ```bash
-pi install https://github.com/user/repo
+pi install https://github.com/lukaspanni/pi-exit
 ```
 
 From npm:

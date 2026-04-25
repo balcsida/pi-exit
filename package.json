@@ -1,6 +1,6 @@
 {
   "name": "pi-exit",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Minimal pi package that adds a /exit command.",
   "type": "module",
   "license": "MIT",
@@ -23,11 +23,19 @@
     "README.md",
     "LICENSE"
   ],
+  "scripts": {
+    "pack:check": "npm pack --dry-run",
+    "typecheck": "tsc --noEmit"
+  },
   "exports": {
     "./package.json": "./package.json"
   },
   "peerDependencies": {
     "@mariozechner/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@mariozechner/pi-coding-agent": "*",
+    "typescript": "^5.9.3"
   },
   "pi": {
     "extensions": [
