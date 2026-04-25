@@ -1,0 +1,37 @@
+{
+  "name": "pi-exit",
+  "version": "0.1.0",
+  "description": "Minimal pi package that adds a /exit command.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lukaspanni/pi-exit"
+  },
+  "author": {
+    "email": "lukas@lukaspanni.de",
+    "name": "Lukas Panni",
+    "url": "lukaspanni.de"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "extension"
+  ],
+  "files": [
+    "extensions",
+    "README.md",
+    "LICENSE"
+  ],
+  "exports": {
+    "./package.json": "./package.json"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions"
+    ]
+  }
+}
