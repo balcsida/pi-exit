@@ -39,7 +39,7 @@
   },
   "pi": {
     "extensions": [
-      "./extensions"
+      "./extensions/exit.ts"
     ]
   }
 }
