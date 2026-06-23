@@ -19,16 +19,11 @@
     "extension"
   ],
   "files": [
-    "extensions",
-    "README.md",
-    "LICENSE"
+    "extensions"
   ],
   "scripts": {
     "pack:check": "npm pack --dry-run",
     "typecheck": "tsc --noEmit"
-  },
-  "exports": {
-    "./package.json": "./package.json"
   },
   "devDependencies": {
     "typescript": "^6.0.3"
