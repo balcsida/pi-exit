@@ -1,4 +1,9 @@
-import type { ExtensionAPI } from "@earendil-works/pi-coding-agent";
+type ExtensionAPI = {
+	registerCommand(name: string, command: {
+		description: string;
+		handler(args: unknown, ctx: { shutdown(): void }): void | Promise<void>;
+	}): void;
+};
 
 export default function (pi: ExtensionAPI) {
 	pi.registerCommand("exit", {
