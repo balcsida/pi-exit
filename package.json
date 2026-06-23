@@ -22,7 +22,6 @@
     "extensions"
   ],
   "scripts": {
-    "pack:check": "npm pack --dry-run",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {

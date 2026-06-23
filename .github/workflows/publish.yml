@@ -10,13 +10,8 @@ permissions:
   contents: read
   id-token: write
 
-concurrency:
-  group: publish-npm
-  cancel-in-progress: false
-
 jobs:
   publish:
-    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
 
     steps:
@@ -37,7 +32,7 @@ jobs:
         run: npm run typecheck
 
       - name: Check package contents
-        run: npm run pack:check
+        run: npm pack --dry-run
 
       - name: Publish to npm
         run: npm publish
